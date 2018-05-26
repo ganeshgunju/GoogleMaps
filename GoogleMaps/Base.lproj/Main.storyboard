@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoogleMaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="VQi-2E-0Qp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CrR-0f-nGk"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VQi-2E-0Qp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5gS-HH-aev"/>
+                            <constraint firstItem="VQi-2E-0Qp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JgS-7R-rdH"/>
+                            <constraint firstAttribute="trailing" secondItem="VQi-2E-0Qp" secondAttribute="trailing" id="K4a-AT-dnu"/>
+                            <constraint firstItem="VQi-2E-0Qp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xr5-vi-BCA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="VQi-2E-0Qp" id="dQs-aZ-0tO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
